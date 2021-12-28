@@ -25,6 +25,7 @@ namespace BlazorApp.Services
         {
             var result = await _httpService.GetLogin<User>("/users/authenticate", user);
             return (IEnumerable<User>)result;
+
         }
     }
 }
